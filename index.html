@@ -115,6 +115,16 @@
             font-size: 2em;
         }
 
+        .audio-container {
+            margin: 20px 0;
+        }
+
+        .audio-container audio {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 5vw;
@@ -177,6 +187,13 @@
 
         <div class="image-container">
             <img src="https://i0.wp.com/www.learningtocookfood.com/wp-content/uploads/2016/01/KnifeSkills3StepMotionC.gif?resize=625%2C352" alt="Animación de habilidades con cuchillo">
+        </div>
+
+        <div class="audio-container">
+            <audio controls>
+                <source src="audio/soundtrack.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
         </div>
 
         <div class="footer">
