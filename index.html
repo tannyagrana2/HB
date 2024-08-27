@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 0 5%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center; 
+            margin: 0; 
+        }
+
+        .header {
+            text-align: left;
+            margin: 20px 0;
+            overflow: hidden; 
+        }
+
+        .header h1, .header h2 {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            display: block;
+        }
+
+        .header h1 {
+            font-size: 10vw; 
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(45deg, #f06, #f79);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slideIn 1s ease-out;
+        }
+
+        .header h2 {
+            font-size: 7vw; 
+            letter-spacing: 1px;
+            margin-top: 0.5em;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(45deg, #ff6, #f09);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slideIn 1s ease-out 0.5s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .small-word {
+            font-size: 0.8em;
+        }
+
+        .large-word {
+            font-size: 1.5em;
+        }
+
+        .xlarge-word {
+            font-size: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 5vw;
+            }
+
+            .header h2 {
+                font-size: 4vw;
+            }
+
+            .footer p {
+                font-size: 1em;
+            }
+
+            .small-word {
+                font-size: 0.7em;
+            }
+
+            .large-word {
+                font-size: 1.3em;
+            }
+
+            .xlarge-word {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 4vw; 
+            }
+
+            .header h2 {
+                font-size: 3vw; 
+            }
+
+            .footer p {
+                font-size: 0.9em;
+            }
+
+            .small-word {
+                font-size: 0.6em;
+            }
+
+            .large-word {
+                font-size: 1.2em;
+            }
+
+            .xlarge-word {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>FELIZ</h1>
+            <h2>CUMPLEAÑOS</h2>
+        </div>
+
+        <div class="image-container">
+            <img src="https://i0.wp.com/www.learningtocookfood.com/wp-content/uploads/2016/01/KnifeSkills3StepMotionC.gif?resize=625%2C352" alt="Animación de habilidades con cuchillo">
+        </div>
+
+        <div class="footer">
+            <p>
+                Solo quería aprovechar para desearle un <span class="highlight large-word">muy feliz cumpleaños</span>. 
+                Que este <span class="highlight xlarge-word">año</span> le traiga <span class="highlight small-word">bendiciones</span> y <span class="highlight large-word">éxitos</span> en sus <span class="highlight small-word">metas</span>. 
+                Me alegra que hayamos podido <span class="xlarge-word">compartir</span> más y espero poder seguir <span class="large-word">construyendo</span>
+                una <span class="highlight xlarge-word">buena relación</span>. <br>Un <span class="small-word">abrazo</span> fuerte y <span class="large-word">muchas</span> felicidades.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
